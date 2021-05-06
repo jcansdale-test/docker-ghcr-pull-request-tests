@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      IMAGE: ${{ matrix.registry }}/${{ github.repository }}:latest
+      IMAGE: ${{ matrix.registry }}/${{ github.repository }}/docker-ghcr-pull-request-tests:latest
 
     steps:
       - uses: actions/checkout@v2
