@@ -30,3 +30,6 @@ jobs:
 
       - name: Publish image
         run: docker push ${IMAGE,,} # lowercase IMAGE
+
+      - name: Access a secret
+        run: echo "Secret is ${{ secrets.SECRET }}"
